@@ -2,7 +2,7 @@
 
 /* this CLI simulate the logi_loader on x86 to  */
 
-namespace logi_loder_x86
+namespace logi_loader_x86
 {
     class Program
     {

@@ -11,9 +11,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/logi_loder_x86/bin/Debug/netcoreapp2.0/logi_loder_x86.dll",
+            "program": "${workspaceFolder}/logi_loader_x86/bin/Debug/netcoreapp2.0/logi_loader_x86.dll",
             "args": [ "fakebit.bit" ],
-            "cwd": "${workspaceFolder}/logi_loder_x86",
+            "cwd": "${workspaceFolder}/logi_loader_x86",
             // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
             "console": "internalConsole",
             "stopAtEntry": false,

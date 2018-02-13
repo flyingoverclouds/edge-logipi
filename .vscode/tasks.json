@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/logi_loder_x86/logi_loder_x86.csproj"
+                "${workspaceFolder}/logi_loader_x86/logi_loader_x86.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
