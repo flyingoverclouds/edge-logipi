@@ -14,5 +14,4 @@ RUN dotnet publish -c Release -r linux-x64 -o out
 FROM microsoft/dotnet
 WORKDIR /app
 COPY --from=build-env /app/out ./
-#ENTRYPOINT ["./dotnetapp"]
 ENTRYPOINT ["dotnet", "dnctest.dll"]
