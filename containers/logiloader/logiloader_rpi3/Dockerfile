@@ -2,5 +2,6 @@
 FROM arm32v7/debian:stretch-slim
 WORKDIR logipi
 COPY logi_loader . 
-# CMD ["/logipi/logi_loader"]
-CMD ["bash"]
+COPY pushbuttons_leds_assign.bit .
+CMD ["/logipi/logi_loader","/logipi/pushbuttons_leds_assign.bit"]
+#CMD ["bash"]
