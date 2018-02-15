@@ -14,7 +14,7 @@
 # FROM build AS publish
 # RUN dotnet publish -c Release -o /app
 
-FROM microsoft/dotnet 
-WORKDIR /app
-COPY . ./
-ENTRYPOINT ["dotnet", "logi_loader_x86.dll"]
+# FROM base AS final
+# WORKDIR /app
+# COPY --from=publish /app .
+# ENTRYPOINT ["dotnet", "WebApplication1docker.dll"]
