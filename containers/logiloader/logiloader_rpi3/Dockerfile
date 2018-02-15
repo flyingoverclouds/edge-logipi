@@ -1,6 +1,6 @@
-# use Debian for maximum cross-architecture compatibility
-#FROM debian:stretch-slim
-FROM scratch
-WORKDIR /app
-COPY . ./
-ENTRYPOINT ["logi_loader"]
+# use Debian-Stretch-slim for  raspbian compability and minimal size
+FROM arm32v7/debian:stretch-slim
+WORKDIR logipi
+COPY logi_loader .
+#CMD ["/logipi/logi_loader"]
+CMD ["bash"]
