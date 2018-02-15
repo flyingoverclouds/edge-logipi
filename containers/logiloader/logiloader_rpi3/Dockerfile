@@ -1,5 +1,6 @@
-
-FROM microsoft/dotnet:2.0.0-runtime-stretch
+# use Debian for maximum cross-architecture compatibility
+#FROM debian:stretch-slim
+FROM scratch
 WORKDIR /app
 COPY . ./
 ENTRYPOINT ["logi_loader"]
