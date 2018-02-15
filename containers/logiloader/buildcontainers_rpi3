@@ -1,0 +1,5 @@
+#/bin/bash
+cd logiloader_rpi3
+docker build . -t logi_loader_rpi3:latest
+docker run --rm logi_loader_rpi3:latest
+
