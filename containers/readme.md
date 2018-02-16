@@ -33,6 +33,6 @@ This two buses must be accessible from the container :
 An other way to run logi_loader in a container, is launching the container with 'privilege'.  
 For testing, it's fine ... but it's preferable to reduce the surface attack/risk at its minimal level.
 
-	docker run --privileged -it logi_loader_rpi3 
+	docker run --privileged -it MyBitstreamContainerImage 
 
 
