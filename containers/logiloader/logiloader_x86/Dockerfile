@@ -1,20 +1,11 @@
-# FROM microsoft/aspnetcore:2.0 AS base
-# WORKDIR /app
-# EXPOSE 80
-
-# FROM microsoft/aspnetcore-build:2.0 AS build
-# WORKDIR /src
-# COPY *.sln ./
-# COPY WebApplication1docker/WebApplication1docker.csproj WebApplication1docker/
-# RUN dotnet restore
-# COPY . .
-# WORKDIR /src/WebApplication1docker
-# RUN dotnet build -c Release -o /app
-
-# FROM build AS publish
-# RUN dotnet publish -c Release -o /app
-
 FROM microsoft/dotnet 
+
 WORKDIR /app
 COPY . ./
-ENTRYPOINT ["dotnet", "logi_loader_x86.dll"]
+
+WORKDIR /bitstreams
+COPY pushbuttons_leds_assign.bit .
+
+ENTRYPOINT ["dotnet","/app/logi_loader_x86.dll"]
+#CMD ["bash"]
+CMD ["/bitstreams/pushbuttons_leds_assign.bit"]

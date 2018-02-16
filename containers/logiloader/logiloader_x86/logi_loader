@@ -1,0 +1,2 @@
+#!/bin/bash
+dotnet logi_loader_x86.dll $1 $2 $3 $4
