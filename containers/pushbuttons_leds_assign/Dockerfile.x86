@@ -4,7 +4,6 @@ FROM logi_loader_x86
 WORKDIR /bitstreams
 COPY pushbuttons_leds_assign.bit .
 
-#ENTRYPOINT [ "/logipi/logi_loader" ]
-
+# pass the command (ie the bitstream to upload) to the base container
 CMD ["/bitstreams/pushbuttons_leds_assign.bit"]
-#CMD ["bash"]
+
