@@ -5,9 +5,9 @@ WORKDIR /logipi
 COPY logi_loader . 
 
 WORKDIR /bitstreams
-COPY pushbuttons_leds_assign.bit .
+#COPY pushbuttons_leds_assign.bit .
 
 ENTRYPOINT [ "/logipi/logi_loader" ]
 
-CMD ["/bitstreams/pushbuttons_leds_assign.bit"]
+#CMD ["/bitstreams/pushbuttons_leds_assign.bit"]
 #CMD ["bash"]

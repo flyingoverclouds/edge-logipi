@@ -1,0 +1,10 @@
+# use Debian-Stretch-slim for raspbian compability and minimal size
+FROM logi_loader_rpi3
+
+WORKDIR /bitstreams
+COPY pushbuttons_leds_assign.bit .
+
+#ENTRYPOINT [ "/logipi/logi_loader" ]
+
+CMD ["/bitstreams/pushbuttons_leds_assign.bit"]
+#CMD ["bash"]
